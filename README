@@ -1,0 +1,52 @@
+
+How to compile lab3_qa:
+
+	Key in "make" on command line to compile.
+
+
+
+Question B:
+
+result for size = 1000:
+
+sort(): 0.001684 seconds
+v1/v2 are different.
+insertion_sort(): 0.084504 seconds
+v1/v2 are the same.
+
+
+result for size = 10000:
+
+sort(): 0.019571 seconds
+v1/v2 are different.
+insertion_sort(): 7.61214 seconds
+v1/v2 are the same.
+
+
+result for size = 100000:
+
+sort(): 0.246432 seconds
+v1/v2 are different.
+insertion_sort(): 752.07 seconds
+v1/v2 are the same.
+
+
+
+Explanation:
+
+
+The time complexity of the function 'sort()' is O(n log n).
+
+On the other hand,the time complexity of the function 'insertion_sort()' is O(n^2).
+
+So,if the size of sorted array increases ten times,the computation needed will increase about ten times for sort()
+
+while it will increases about one hundred times for insertion_sort().
+
+As a result,the time spent by insertion_sort() increases dramatically compared to it spent by sort()
+
+when the size of sorted array increases.
+
+
+
+
