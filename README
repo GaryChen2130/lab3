@@ -31,13 +31,21 @@ insertion_sort(): 752.07 seconds
 v1/v2 are the same.
 
 
+result for size = 1000000:
+
+sort(): 2.79214 seconds
+v1/v2 are different.
+
+The time needed for insertion sort is about 75000 seconds deduced from previous experiments.
+So I skip this step since it takes too much time.
+
 
 Explanation:
 
 
-The time complexity of the function 'sort()' is O(n log n).
+The time complexity of the function 'sort()' is O(n log n). 10n*log(10n) = 10n*(log10 + logn) = 10n*(logn + 1) ~= 10*n*logn
 
-On the other hand,the time complexity of the function 'insertion_sort()' is O(n^2).
+On the other hand,the time complexity of the function 'insertion_sort()' is O(n^2). (10n)^2 = 100*n^2
 
 So,if the size of sorted array increases ten times,the computation needed will increase about ten times for sort()
 
